@@ -250,12 +250,6 @@ FROM product pd
 WHERE pd.name LIKE '%Профнастил%'
 );
 
-SELECT SUM(pa.quantity)
-FROM product_availability pa
-INNER JOIN price p ON p.id_price = pa.id_price
-WHERE price.id_warehouse = warehouse.id_warehouse;
-
-
 SELECT 
 w.name AS warehouse_name, 
 (
