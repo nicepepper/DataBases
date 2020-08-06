@@ -230,9 +230,9 @@ COMMIT;
 
 -- 9. Добавить необходимые индексы для всех таблиц.
 
-CREATE INDEX IX_room_hotel_id_hotel ON lab5.room(id_hotel);
+CREATE INDEX IX_room_id_hotel ON lab5.room(id_hotel);
 CREATE INDEX IX_room_id_room_category ON lab5.room(id_room_category);
-CREATE INDEX IX_client_phone_ ON lab5.client(phone);
+CREATE INDEX IX_client_phone ON lab5.client(phone);
 CREATE INDEX iX_room_in_booking_id_booking ON lab5.room_in_booking(id_booking);
 CREATE INDEX IX_room_in_booking_id_room ON lab5.room_in_booking(id_room);
 CREATE INDEX IX_room_in_booking_checkin_date_checkout_date ON lab5.room_in_booking(checkin_date, checkout_date);
